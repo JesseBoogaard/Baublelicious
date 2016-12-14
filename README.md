@@ -51,4 +51,7 @@ Download and drop the Baublelicious.jar file into your ".minecraft/mods" folder.
 You may use it in any mod pack you like. I am however nosey and would appreciate a comment or PM if you are going to do so.
 
 #Authors
-This mod was originally created by DenBukki and is now owned and maintained by UnwrittenFun, although DenBukki may still contribute.
+DenBukki: Owner, Author, Maintainer
+
+#Special thanks
+Unwrittenfun: for maintaining and developing the mod for a while.
