@@ -52,6 +52,7 @@ You may use it in any mod pack you like. I am however nosey and would appreciate
 
 #Authors
 DenBukki: Owner, Author, Maintainer
+Unwrittenfun: Former Author and maintainer
 
 #Special thanks
 Unwrittenfun: for maintaining and developing the mod for a while.
