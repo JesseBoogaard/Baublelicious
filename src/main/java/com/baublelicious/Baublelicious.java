@@ -3,22 +3,31 @@ package com.baublelicious;
 import com.baublelicious.items.BaubleliciousItems;
 
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(modid = ModInfo.MOD_ID, name = ModInfo.NAME, version = ModInfo.VERSION)
 
 public class Baublelicious
 {
-
-    @EventHandler
+	@SidedProxy(clientSide = "com.baublelicious.client.ClientProxy", serverSide = "com.baublelicious.CommonProxy")
+	public static CommonProxy proxy;
+	 
+	@Mod.Instance(ModInfo.MOD_ID)
+	public static Baublelicious instance;
+	@Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
      
     }
-    @EventHandler
+	@Mod.EventHandler
     public void preInit(FMLPreInitializationEvent e) {
-    	BaubleliciousItems.createItems();
+    	BaubleliciousItems.init();
     }
+    @Mod.EventHandler
+	public void postInit(FMLPostInitializationEvent event) {
+
+	}
 }

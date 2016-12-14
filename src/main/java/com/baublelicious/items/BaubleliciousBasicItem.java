@@ -1,5 +1,7 @@
 package com.baublelicious.items;
 
+import com.baublelicious.Baublelicious;
+
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
@@ -13,6 +15,14 @@ import net.minecraft.item.Item;
 			setRegistryName(name);
 		}
 
-	
+		public void registerItemModel(Item item) {
+			Baublelicious.proxy.registerItemRenderer(item, 0, name);
+		}
+
+		@Override
+		public BaubleliciousBasicItem setCreativeTab(CreativeTabs tab) {
+			super.setCreativeTab(tab);
+			return this;
+		}
 
 	}
